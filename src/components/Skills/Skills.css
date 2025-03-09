@@ -1,0 +1,70 @@
+.skills {
+  padding: 8rem 4rem;
+  background-color: #f0f0f0;
+}
+
+.skills h2 {
+  color: #6bdc6b;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  justify-self: center;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skills h2 span {
+  color: black;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  width: 80%;
+  margin: auto;
+}
+
+/* Individual Skill Box */
+.skill {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(44, 44, 44);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.skill img {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.5rem;
+}
+
+.simple_card-text h3 {
+  font-size: 2rem;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+  letter-spacing: 1px;
+}
+
+.simple_card-text p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+
+@media (max-width: 1040px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .skills-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

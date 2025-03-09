@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background: black;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: "Playwrite IT Moderna", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 2rem;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.nav-links a:hover {
+  color: #5bbb5b;
+}
+.hire-btn {
+  background: #6bdc6b;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.hire-btn:hover {
+  background: #5bbb5b;
+}
+
+@media (max-width: 842px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hire-btn {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  .hire-btn {
+    font-size: 1.2rem;
+  }
+
+  .nav-links li {
+    margin: 0 1rem;
+  }
+}

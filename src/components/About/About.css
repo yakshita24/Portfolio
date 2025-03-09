@@ -1,0 +1,74 @@
+.about {
+  padding: 8rem 4rem;
+  background-color: #f0f0f0;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Image Section */
+.about-image img {
+  width: 80%;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-image .port-name {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.about-image .port-name a {
+  margin-left: 1rem;
+  color: red;
+}
+
+.about-image img[src="linkedin.png"] {
+  width: 20px;
+  margin-left: 5px;
+}
+
+/* Text Section */
+.about-text {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.about-text h2 {
+  color: #6bdc6b;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-text p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 1040px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 25rem;
+  }
+
+  .about-image .port-name {
+    justify-self: center;
+  }
+}

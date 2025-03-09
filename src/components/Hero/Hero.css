@@ -1,0 +1,112 @@
+.hero {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+.hero-text {
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr;
+}
+
+.hero-text h2 {
+  font-size: 7.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  letter-spacing: 1px;
+}
+
+.hero-text span {
+  color: yellow;
+}
+
+.hero-text p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.talk-btn {
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  background: #6bdc6b;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 2rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.talk-btn:hover {
+  background: #5bbb5b;
+}
+
+.download-resume {
+  color: white;
+  font-size: 1.6rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.download-resume:hover {
+  text-decoration: underline;
+}
+
+/* Hero Image */
+.hero-image {
+  display: grid;
+  justify-items: center;
+}
+.hero-image img {
+  width: 80%;
+  height: auto;
+  border-radius: 5rem;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 1040px) {
+  .hero-text h2 {
+    font-size: 6rem;
+  }
+  .talk-btn {
+    font-size: 1.4rem;
+  }
+  .hero-text p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+  .hero-image img {
+    width: 70%;
+  }
+  .hero-text {
+    align-items: center;
+    justify-items: center;
+  }
+  .hero-text h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+}
